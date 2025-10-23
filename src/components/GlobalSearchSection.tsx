@@ -11,7 +11,7 @@ export default function GlobalReachSection() {
   useEffect(() => {
     let observer: IntersectionObserver;
     let start = 0;
-    let interval: NodeJS.Timer;
+    let interval: number; 
 
     if (sectionRef.current) {
       observer = new IntersectionObserver(
@@ -21,11 +21,11 @@ export default function GlobalReachSection() {
             const totalFrames = (duration / 1000) * fps;
             const increment = target / totalFrames;
 
-            interval = setInterval(() => {
+            interval = window.setInterval(() => { // <-- window.setInterval
               start += increment;
               if (start >= target) {
                 start = target;
-                clearInterval(interval);
+                window.clearInterval(interval); // <-- window.clearInterval
               }
               setCount(Math.floor(start));
             }, 1000 / fps);
@@ -40,21 +40,19 @@ export default function GlobalReachSection() {
     }
 
     return () => {
-      if (interval) clearInterval(interval);
+      if (interval) window.clearInterval(interval);
       if (observer) observer.disconnect();
     };
   }, []);
 
   return (
     <section ref={sectionRef} className="relative w-full h-[600px] md:h-[700px] my-32">
-      {/* Hintergrundbild */}
       <img
         src="/images/rolltreppe.jpg"
         alt="Globale Reichweite"
         className="w-full h-full object-cover"
       />
 
-      {/* Overlay unten links */}
       <div className="absolute bottom-8 left-8 md:bottom-16 md:left-16 text-white max-w-md">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Unsere Globalität
