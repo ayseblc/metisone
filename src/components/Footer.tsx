@@ -5,7 +5,7 @@ import { FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-16 px-6 md:px-16">
-      {/* Social Media */}
+      
       <div className="flex flex-col items-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
           Verbinde dich mit uns auf Social Media
@@ -33,7 +33,7 @@ export default function Footer() {
      
       <div className="border-t border-gray-700 mb-12"></div>
 
-      {/* Footer Columns */}
+      
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-24 text-center">
           {/* Über uns */}

@@ -37,7 +37,7 @@ export default function FullPageReviewsIllustration() {
         </h2>
       </div>
 
-      {/* Reviews */}
+      
       {reviews.map((review, index) => (
         <div
           key={index}
@@ -60,7 +60,7 @@ export default function FullPageReviewsIllustration() {
             </p>
 
             <div className="flex flex-col items-start gap-2 mt-6">
-              {/* Moderner Link „Zur Bewertung“ */}
+             
               <a
                 href={review.googleMapsLink}
                 target="_blank"
@@ -70,7 +70,6 @@ export default function FullPageReviewsIllustration() {
                 Zur Bewertung <span className="ml-2 text-gray-500">→</span>
               </a>
 
-              {/* Name & Rolle */}
               <div className="flex items-center gap-4 mt-2">
                 <div className="w-14 h-14 rounded-full overflow-hidden shadow-md flex-shrink-0">
                   <Image
@@ -89,7 +88,7 @@ export default function FullPageReviewsIllustration() {
             </div>
           </div>
 
-          {/* Illustration */}
+        
           <div className="md:w-1/2 relative rounded-3xl overflow-hidden shadow-xl min-h-[400px] md:min-h-[500px] flex items-center justify-center bg-gray-100">
             <Image
               src={review.image}

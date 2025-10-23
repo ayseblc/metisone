@@ -26,11 +26,11 @@ export default function ApproachPage() {
     },
   ];
 
-  const iconColor = "text-cyan-500"; // Einheitliche Icon-Farbe
+  const iconColor = "text-cyan-500"; 
 
   return (
     <div className="bg-white">
-      {/* Timeline + Bild rechts */}
+      
       <section className="relative py-24 px-6 md:px-16 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ export default function ApproachPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6 }}
                 >
-                  {/* Icon mit Farbverlauf */}
+              
                   <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full border-2 border-white shadow-lg z-10
                     bg-gradient-to-r from-cyan-400 to-cyan-500"></div>
 
@@ -88,7 +88,7 @@ export default function ApproachPage() {
             </div>
           </div>
 
-          {/* Bild + Text rechts */}
+       
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

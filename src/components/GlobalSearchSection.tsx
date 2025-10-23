@@ -21,11 +21,11 @@ export default function GlobalReachSection() {
             const totalFrames = (duration / 1000) * fps;
             const increment = target / totalFrames;
 
-            interval = window.setInterval(() => { // <-- window.setInterval
+            interval = window.setInterval(() => { 
               start += increment;
               if (start >= target) {
                 start = target;
-                window.clearInterval(interval); // <-- window.clearInterval
+                window.clearInterval(interval); 
               }
               setCount(Math.floor(start));
             }, 1000 / fps);

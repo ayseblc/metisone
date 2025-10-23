@@ -50,7 +50,7 @@ export default function Header() {
           </Link>
         ))}
 
-        {/* Social Media Icons */}
+       
         <div className="flex space-x-4 ml-6">
           <a
             href="https://www.instagram.com/metisorigins/"

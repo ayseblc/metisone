@@ -4,24 +4,23 @@ export default function MissionSection() {
   return (
 
 <section className="py-32 bg-white text-center px-4 md:px-0">
-  {/* Mission Text */}
   <p className="text-3xl md:text-4xl font-semibold text-black mb-12 max-w-4xl mx-auto leading-relaxed">
     Unsere Mission ist es, weltweit inspirierende und effektive Werbekampagnen zu schaffen.
     Mit unserer globalen Reichweite und tiefgehenden lokalen Expertise setzen wir uns dafür ein,
     Ihr Unternehmen erfolgreich zu machen. Lassen Sie uns gemeinsam Großartiges erreichen.
   </p>
 
-  {/* Name */}
+
   <p className="text-2xl md:text-3xl font-semibold text-black mb-2">
     Marcel Richter
   </p>
 
-  {/* Titel */}
+ 
   <p className="text-gray-600 text-lg md:text-xl mb-16">
     Founder & CEO
   </p>
 
-  {/* Drei Paragrafen nebeneinander */}
+
   <div className="flex flex-col md:flex-row justify-center items-start md:space-x-16 gap-12">
     {/* Professional Hosting */}
     <div className="flex-1 text-left">
